@@ -1,0 +1,451 @@
+@import url("https://fonts.googleapis.com/css?family=Yantramanav:100");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400");
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat-700", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Alert box */
+.banner {
+  position: fixed;
+  z-index: 9999;
+  padding: 2.5rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  display: none;
+  text-align: center;
+
+}
+
+.banner.active {
+  display: block;
+}
+
+.banner-bottom {
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+
+.banner-top {
+  left: 0;
+  right: 0;
+  top: 10px;
+}
+
+.banner-right {
+  right: 10px;
+  bottom: 10%;
+  min-height: 10vh;
+}
+
+.banner-left {
+  left: 10px;
+  bottom: 10%;
+  min-height: 10vh;
+}
+
+.alert-primary {
+  color: #84ab1d;
+  background-color: #353a3c;
+  border-color: #84ab1d;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.banner-close {
+  position: absolute;
+  right: 1.5%;
+  cursor: pointer;
+}
+
+.banner-close:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: 'X';
+  color: #84ab1d;
+
+}
+
+/* About Section */
+
+.about {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background: url("../img/Intro.jpg") no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+  font-size: 150%;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 100%;
+  position: absolute;
+}
+
+.download {
+  position: absolute;
+  padding-top: 200px;
+}
+
+.about .poem {
+  font-family: Montserrat, sans-serif;
+  font-size: 150%;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 100%;
+  padding-top: 100px;
+}
+
+.about h2:before {
+  content: '— ';
+}
+
+.about h2:after {
+  content: ' —';
+}
+
+.about-title {
+  width: 60%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  margin: 0 !important;
+
+}
+
+.about-pages {
+  width: 40%;
+
+}
+
+.about-pages div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about-pages div>p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  padding-top: 15px;
+}
+
+.about .poem+p:first-letter {
+  float: left;
+  font-size: 48px;
+  line-height: 1;
+  margin: 2px 5px 0 0;
+  font-family: 'Petit Formal Script', cursive;
+}
+
+.about p:first-line {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.about p:last-child {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+/* Navigation Bar */
+
+nav {
+  height: 10vh;
+  background: #506812;
+  position: fixed;
+  width: 100%;
+  float: right;
+  z-index: 1;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.logo {
+  width: 10%;
+  float: left;
+  padding-left: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: #1e2223;
+  padding: 20px 0;
+  color: white;
+
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.social-media {
+  margin: 20px 0;
+}
+
+.social-media a {
+  margin-right: 25px;
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+  transition: 0.3s linear;
+}
+
+.social-media a:hover {
+  color: #84ab1d;
+}
+
+.right-col .h1-footer {
+  font-size: 26px;
+}
+
+.border {
+  width: 100px;
+  height: 4px;
+  background: #84ab1d;
+}
+
+.newsletter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.p-footer a {
+  text-decoration: none;
+  color: #84ab1d;
+  cursor: pointer;
+}
+
+.txtb {
+  flex: 1;
+  padding: 18px 40px;
+  font-size: 16px;
+  color: #293043;
+  background: #ddd;
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 25px;
+  min-width: 260px;
+}
+
+.btn-download {
+  padding: 18px 40px;
+  font-size: 16px;
+  /* padding: 10px 20px; */
+  transition: all 0.5s;
+  color: #f1f1f1;
+  border: solid #84ab1d;
+  background: #84ab1d;
+  border-bottom: solid 2px #6a8a17;
+  font-weight: 700;
+  outline: none;
+  border-radius: 25px;
+  min-width: 260px;
+  margin-left: 20px;
+  cursor: pointer;
+  transition: opacity 0.3s linear;
+  text-decoration: none;
+}
+
+.btn-download:hover {
+  opacity: 0.7;
+}
+
+/*--- Media Queries --*/
+
+@media screen and (max-width: 1200px) {
+  .about-pages div>p {
+    width: 80%;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .about h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 85%;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 100%;
+  }
+
+  .about-title {
+    width: 50%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-pages div>p {
+    width: 80%;
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .about h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 85%;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 100%;
+  }
+
+  .about-title {
+    width: 50%;
+    text-align: center;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-pages div>p {
+    width: 80%;
+    font-size: 13px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .about h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 90%;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 100%;
+  }
+
+  .about-title {
+    width: 50%;
+    text-align: center;
+
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+
+  /* Nav */
+  .logo {
+    width: 30%;
+    float: left;
+    padding: 5px 0 0 15px;
+  }
+
+  nav {
+    top: 0;
+  }
+
+  /* footer */
+  .footer {
+    bottom: 0;
+    position: fixed;
+  }
+
+  .right-col .h1-footer {
+    font-size: 16px;
+  }
+
+  .right-col p {
+    font-size: 13px;
+  }
+
+  .right-text {
+    font-size: 11px;
+  }
+
+  /* about */
+
+  .about {
+    display: block;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: #50681245;
+    background-blend-mode: darken;
+  }
+
+  .about-title {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .about h2 {
+    font-family: Montserrat, sans-serif;
+    font-size: 100%;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 100%;
+  }
+
+  .about-pages {
+    width: 100%;
+
+  }
+
+  .about-para {
+    padding-bottom: 40px;
+  }
+
+  .about-pages div>p {
+    width: 80%;
+    font-size: 13px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  /* footer */
+
+  footer {
+
+    padding: 40px 0px;
+
+  }
+
+}
